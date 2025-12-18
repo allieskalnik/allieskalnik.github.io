@@ -3,87 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+
     <style>
         /* Reset default browser spacing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
             font-family: Arial, sans-serif;
             background: #f0f7ff;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #374151;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        /* Main content */
+        main {
             padding: 40px;
+            max-width: 800px;
+            margin: auto;
         }
-        h1 {
-            color: #0057b7;
-        }
-        p {
-            font-size: 18px;
-        }
+
         .box {
             padding: 20px;
             background: white;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            max-width: 600px;
         }
     </style>
 </head>
+
 <body>
-    /* Navbar */
-.navbar {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 
-/* Container */
-.nav-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Logo */
-.nav-logo {
-    font-size: 20px;
-    font-weight: 600;
-    color: #111827;
-}
-
-/* Links */
-.nav-links a {
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #374151;
-    transition: color 0.2s ease;
-}
-
-.nav-links a:hover {
-    color: #2563eb;
-}
-        body {
-            <nav class="navbar">
-    <div class="nav-container">
-        <div class="nav-logo">
-            My Website
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Allie Skalnik</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <main>
+        <div class="box">
+            <h1>About Me</h1>
+            <p>Hello world!</p>
+
+            <img src="images/IMG_4866.jpg" width="300" style="margin-top:20px;">
         </div>
-    </div>
-</nav>
-    <div class="box">
-        <h1>About Me</h1>
-        <p>Welcome to my first website hosted with GitHub Pages.</p>
-    </div>
+    </main>
+
 </body>
 </html>
