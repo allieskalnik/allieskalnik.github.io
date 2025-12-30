@@ -17,7 +17,15 @@
             background: #f0f7ff;
         }
 
-
+.audio-title {
+    grid-column: 1 / -1;
+    font-size: 32px;
+    font-weight: 800;
+    color: #000;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+        
 /* Audio Section */
 .audio-section {
     margin-top: 60px;
@@ -39,6 +47,9 @@
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+}
+        .audio-card {
+    row-gap: 16px;   /* instead of default gap everywhere */
 }
 
 /* Image */
@@ -199,16 +210,16 @@
             <img src="images/IMG_4866.jpg" width="300" style="margin-top:20px;">
             <p>Science Writer</p>
         </div>
-   <h2>Are we screwed? The truth about climate tipping points.</h2>     
+   
 <section class="audio-section">
 
-    <div class="audio-card">
+  <div class="audio-card">
 
-        <!-- Image -->
-        <img src="images/audio-feature.jpeg" alt="Audio cover">
+    <h2 class="audio-title">
+      Are we screwed? The truth about climate tipping points.
+    </h2>
 
-        <!-- Text -->
-        <div class="audio-text">
+    <img src="images/audio-feature.jpeg" alt="Audio cover">
           
             <p>
          Hosts Allie Skalnik and Zoe Colloredo-Mansfeld interview Stanford’s top climate experts about climate tipping points. 
