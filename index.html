@@ -27,7 +27,8 @@
     </div>
 </section>
 
-        .audio-section {
+/* Audio Section */
+.audio-section {
     margin-top: 60px;
 }
 
@@ -40,7 +41,7 @@
 /* Audio Card */
 .audio-card {
     display: grid;
-    grid-template-columns: 140px 1fr 280px;
+    grid-template-columns: 120px 1fr 260px;
     gap: 20px;
     align-items: center;
     background: white;
@@ -51,8 +52,8 @@
 
 /* Image */
 .audio-card img {
-    width: 100%;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -60,14 +61,14 @@
 /* Text */
 .audio-text h3 {
     font-size: 18px;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     color: #111827;
 }
 
 .audio-text p {
     font-size: 15px;
     color: #4b5563;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 /* Audio Player */
@@ -75,18 +76,18 @@
     width: 100%;
 }
 
-/* Responsive behavior */
+/* Mobile */
 @media (max-width: 768px) {
     .audio-card {
         grid-template-columns: 1fr;
-        text-align: center;
+        text-align: left;
     }
 
-    .audio-player audio {
-        margin-top: 10px;
+    .audio-card img {
+        width: 100%;
+        height: auto;
     }
 }
-
         /* Work Section */
 .work-section {
     margin-top: 60px;
