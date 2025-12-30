@@ -137,7 +137,99 @@
             <img src="images/IMG_4866.jpg" width="300" style="margin-top:20px;">
             <p>Science Writer</p>
         </div>
-        <section class="work-section">
+<section class="audio-section">
+    <h2>Featured Audio</h2>
+
+    <div class="audio-card">
+
+        <!-- Image -->
+        <img src="images/audio-feature.jpeg" alt="Audio cover">
+
+        <!-- Text -->
+        <div class="audio-text">
+            <h3>Are we screwed? The truth about climate tipping points.</h3>
+            <p>
+                Will the ocean flip upside down? Can coral reefs battle climate change? Is Antarctica destined for runaway melting? In this episode, we tear into a phrase that has dominated headlines about how the earth is changing: climate tipping point. It’s a confusing phrase, one that seems to suggest there is a single earthwide tipping point we will one day pass, waking up to an Earth that has flipped from happy home to climate wasteland. 
+
+But what does it really mean? Why do scientists, journalists, and climate activists keep using it? And most importantly: Are we screwed? 
+            </p>
+            Hosts Allie Skalnik and Zoe Colloredo-Mansfeld interview Stanford’s top climate experts, who say it’s far, far more complicated than that. Listen to the full story now. ** Note: For the purpose of being a portfolio piece, I edited this 40-minute episode down to around 15 minutes **
+
+            </p>
+        </div>
+
+        <!-- Audio Player -->
+        <div class="audio-player">
+            <audio controls>
+                <source src="images/Podcast Snippet.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+    </div>
+</section>
+
+        .audio-section {
+    margin-top: 60px;
+}
+
+.audio-section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+/* Audio Card */
+.audio-card {
+    display: grid;
+    grid-template-columns: 140px 1fr 280px;
+    gap: 20px;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Image */
+.audio-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Text */
+.audio-text h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #111827;
+}
+
+.audio-text p {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.4;
+}
+
+/* Audio Player */
+.audio-player audio {
+    width: 100%;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .audio-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .audio-player audio {
+        margin-top: 10px;
+    }
+}
+
+        
+</div>
     <h2>My Written Work</h2>
 
     <div class="work-grid">
@@ -219,26 +311,7 @@
 
     </div>
         </div>
-            <section class="audio-section">
-    <h3>Are we screwed? The truth about climate tipping points.</h3>
 
-    <audio controls>
-        <source src="images/Podcast Snippet.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-</section>
-            <h2>More of my multimedia work will be added shortly! Thank you for your patience with this developing website.</h2>
-</section>
-
-.audio-section h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-audio {
-    width: 100%;
-    max-width: 500px;
-}
     </main>
 
 </body>
