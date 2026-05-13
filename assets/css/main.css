@@ -4174,6 +4174,18 @@ input, select, textarea {
 }
 
 #banner .inner {
-	position: relative;
-	z-index: 2;
+	<section id="banner" style="background-image: url('images/IMG_4866 copy.jpg');">
+	<div class="inner banner-flex">
+
+		<div class="banner-text">
+			<h2>Allie Skalnik</h2>
+			<p>Science Writer</p>
+		</div>
+
+		<div class="banner-headshot">
+			<img src="images/headshot.jpg" alt="Allie Skalnik">
+		</div>
+
+	</div>
+</section>
 }
