@@ -4176,6 +4176,8 @@ input, select, textarea {
 #banner .inner {
 	position: relative;
 	z-index: 2;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 	
 /* Layout: text + headshot */
@@ -4184,6 +4186,7 @@ input, select, textarea {
 	justify-content: space-between;
 	align-items: center;
 	gap: 40px;
+	padding: 20px 0;
 }
 
 /* Text block */
@@ -4193,14 +4196,15 @@ input, select, textarea {
 
 /* Headshot container */
 .banner-headshot img {
+	display: block;   /* prevents weird inline spacing */
 	width: 140px;
 	height: 140px;
+	min-width: 140px; /* prevents stretching */
 	object-fit: cover;
-	border-radius: 50%; /* makes it circular */
+	border-radius: 50%;
 	border: 3px solid rgba(255,255,255,0.8);
 	box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
-
 	@media (max-width: 768px) {
 	.banner-flex {
 		flex-direction: column;
@@ -4211,4 +4215,8 @@ input, select, textarea {
 		width: 110px;
 		height: 110px;
 	}
+}
+
+.banner-headshot {
+	flex-shrink: 0;   /* prevents it from stretching */
 }
