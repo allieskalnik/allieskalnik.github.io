@@ -4174,18 +4174,41 @@ input, select, textarea {
 }
 
 #banner .inner {
-	<section id="banner" style="background-image: url('images/clay-banks-VppPygAZKU0-unsplash');">
-	<div class="inner banner-flex">
+	position: relative;
+	z-index: 2;
+}
+	
+/* Layout: text + headshot */
+.banner-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
 
-		<div class="banner-text">
-			<h2>Allie Skalnik</h2>
-			<p>Science Writer</p>
-		</div>
+/* Text block */
+.banner-text h2 {
+	margin-bottom: 10px;
+}
 
-		<div class="banner-headshot">
-			<img src="images/headshot.JPG" alt="Allie Skalnik">
-		</div>
+/* Headshot container */
+.banner-headshot img {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 50%; /* makes it circular */
+	border: 3px solid rgba(255,255,255,0.8);
+	box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
 
-	</div>
-</section>
+	@media (max-width: 768px) {
+	.banner-flex {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.banner-headshot img {
+		width: 110px;
+		height: 110px;
+	}
 }
