@@ -4197,8 +4197,8 @@ input, select, textarea {
 /* Headshot container */
 .banner-headshot img {
 	display: block;   /* prevents weird inline spacing */
-	width: 500px !important;
-	height: 500px !important;
+	width: 180px !important;
+	height: 180px !important;
 	min-width: 140px; /* prevents stretching */
 	object-fit: cover;
 	border-radius: 50%;
