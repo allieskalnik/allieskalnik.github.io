@@ -4250,3 +4250,16 @@ input, select, textarea {
 .nav-right a:hover {
 	color: #2563eb;
 }
+
+/* Navigation bar background color */
+#header {
+    background-color: #2e3141 !important;
+}
+
+#header .nav-bar {
+    background-color: #2e3141 !important;
+}
+
+#header .nav-bar a {
+    color: #ffffff !important;
+}
