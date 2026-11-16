@@ -4275,3 +4275,9 @@ input, select, textarea {
     margin: 0;
     background-color: #62586f;
 }
+
+@media (max-width: 768px) {
+    #header .logo {
+        display: none !important;
+    }
+}
