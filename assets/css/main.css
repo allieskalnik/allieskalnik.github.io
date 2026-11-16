@@ -3381,11 +3381,6 @@ input, select, textarea {
 		padding: 10em 0 4.75em 0 ;
 	}
 
-		#banner .inner {
-			margin: 0 auto;
-			width: 55em;
-		}
-
 		#banner .logo {
 			-moz-transition: opacity 2s ease, -moz-transform 1s ease;
 			-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
@@ -4174,10 +4169,10 @@ input, select, textarea {
 }
 
 #banner .inner {
-	position: relative;
-	z-index: 2;
-	max-width: 1000px;
-	margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 	
 /* Layout: text + headshot */
@@ -4196,14 +4191,14 @@ input, select, textarea {
 
 /* Headshot container */
 .banner-headshot img {
-	display: block;   /* prevents weird inline spacing */
-	width: 180px !important;
-	height: 180px !important;
-	min-width: 140px; /* prevents stretching */
-	object-fit: cover;
-	border-radius: 50%;
-	border: 3px solid rgba(255,255,255,0.8);
-	box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    display: block;
+    width: 280px !important;
+    height: 280px !important;
+    min-width: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.8);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 	@media (max-width: 768px) {
 	.banner-flex {
