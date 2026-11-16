@@ -4281,3 +4281,7 @@ input, select, textarea {
         display: none !important;
     }
 }
+
+.sentence-case p {
+    text-transform: none !important;
+}
