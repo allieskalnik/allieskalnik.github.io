@@ -4285,3 +4285,7 @@ input, select, textarea {
 .sentence-case p {
     text-transform: none !important;
 }
+
+ul.actions {
+    justify-content: center;
+}
