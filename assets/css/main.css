@@ -4287,5 +4287,5 @@ input, select, textarea {
 }
 
 ul.actions {
-    justify-content: center;
+    text-align: center;
 }
